@@ -1,21 +1,27 @@
 <template>
   <div style="margin-bottom: 80px;">
-    <h1>Hello!</h1>
+    <h1>Tarik Campbell</h1>
 
     <div class="paragraph">
       <div>
-        I'm <strong>John Matrix</strong>, a former Delta Force operative, now a hobbyist lumberjack.<br/>
-        I spend my days living alone with my daughter Jenny, and cutting trees and carrying trunks around to keep in shape.
+        I'm <strong>Tarik Campbell</strong>, a Game Technical Designer specializing in <strong>Tools Design, Car Controllers, and UI/UX Design</strong>.<br/>
       </div>
 
-      <div style="margin-top: 20px;">I've worked on  <router-link to="/game-projects">stuff</router-link>, on <router-link to="/other-projects">other stuff</router-link>, and took part in <router-link to="/resume">a few things</router-link> as well.</div>
+      <div>
+        <br/>
+        I have been making games for 8 years, developing everything from small console applications to large open world Unreal Engine 5 games, with teams of various sizes. But I only really started taking game development seriously after my first game jam with a college roommate. After a strenuous 72 hour blitz of coding and pixel art, I invited a friend to play our game. The smile that appeared on his face brought me a level of joy I had never experienced, and from then on I decided to make this my career, still trying to feel that joy everyday. 
+      </div>
 
-      <div style="margin-top: 40px;">I'm <strong>currently looking for a job</strong> as a monk, like my good friend John Rambo did a few years back. You can reach me at <a href="mailto:johnmatrix@deltaforce.us">johnmatrix@deltaforce.us</a> or <router-link to="/contact">through here</router-link>.</div>
+      <div style="margin-top: 20px;">Over the past 9 months, I have had the opportunity to work with some extremely talented people on what is the best game project I have worked on, <router-link to="/game-projects">Everent</router-link>, an open-world hoverboarding game. I am also a frequent game jam entrant, and you can play some of my game jam projects on my <a href="https://masterofbanks.itch.io/">itch.io page</a>.</div>
+
+      <div style="margin-top: 40px;">I'm <strong>currently looking for my next opportunity</strong> as a Technical Designer. You can reach me at <a href="mailto:tarikalex2003@gmail.com">tarikalex2003@gmail.com</a> or <router-link to="/contact">through here</router-link>.</div>
     </div>
 
     <div class="photo">
-      <img src="img/avatar.png" alt="Avatar of John" /> 
+      <img src="img/son.png" alt="Avatar of John" /> 
     </div>
+
+    
 
     <div style="clear:both"></div>
 
@@ -40,8 +46,9 @@
 
   .photo {
     float: left;
-    padding: 10px;
+    padding: 0px;
     padding-left: 80px;
+    width: 400px;
   }
 }
 
