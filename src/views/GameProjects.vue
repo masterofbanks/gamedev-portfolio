@@ -2,9 +2,6 @@
   <div>
     <h1>Big Projects</h1>
 
-    <div style="margin-bottom: 30px;">
-      These are my best and longest projects
-    </div>
 
     <ProjectsList v-bind:projects="projects" />
 
