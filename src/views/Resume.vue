@@ -1,119 +1,112 @@
 <template>
   <div>
     <h1>Resume</h1>
-
-    <div class="paragraph">
-      I'm <strong>John Matrix</strong>, a former Delta Force operative with lots of experience, lots of training and huge muscles.
-      <br />After graduating from kindergarten, I've been enrolled in the army for 25 years, where I learned to destroy things in an amazing number of ways.
-      <br />I joined the Delta Force because I thought it was Greek lessons, but I quickly adapted to this unexpected environment and became a key element.
-      <br />I love teamwork, but I can also go in solo depending on the mission requirements.
-      <br />
-      <br />Right now I'm trying to find inner peace after I've read some personal development books. I'm looking for a monk job so if you have any opportunity feel free to 
-      <router-link to="/contact">contact me</router-link>.
-      <br />
-      <br />Besides war, I'm passionate about firearms, martial arts, explosions, push-ups and flowers.
-
-      <div style="margin-top:20px; margin-bottom:20px;">
-        <a class="download-link" href="d/resume-en.pdf" target="_blank"><i class="fa fa-download fa-lg fa-fw"></i> Download as PDF 🇬🇧</a>
-        <a class="download-link" href="d/cv-fr.pdf" target="_blank"><i class="fa fa-download fa-lg fa-fw"></i> Télécharger en PDF 🇫🇷</a>
-        <div style="clear:both"></div>
-      </div>
-    </div>
-    <div class="photo">
-      <img src="img/resume-photo.png" alt="Photo of John" />
-    </div>
-
     <div style="clear:both"></div>
 
     <div class="full-content">
       <h2>Work experience</h2>
 
-      <h3>Operation Classified - Delta Force</h3>
-      <h4>2018-2019</h4>
+      <h3>Technical Designer - Studio Kismet</h3>
+      <h4>October 2025 - Present | Orlando, FL</h4>
+      <ul>
+        <li>Developed Everent, a hoverboard skating game in Unreal Engine 5, with a multidisciplinary team of 23 people.</li>
+        <li>Implemented diegetic UI elements, including pause menus, narrative journals, and interaction prompts, in collaboration with UI artists.</li>
+        <li>Designed and built a 3D compass system to help players navigate to points of interest in the open world.</li>
+        <li>Implemented full controller remapping to enhance player customization and accessibility.</li>
+        <li>Built a 2D heatmapping tool that provided player position data for level design improvements.</li>
+      </ul>
+      <div class="tech-stack">Unreal Engine 5, UI/UX Design, Tools Design</div>
 
-      <div>It's classified so I can't speak about it.</div>
+      <h3>Project Lead - TMRW Sports</h3>
+      <h4>January 2026 - May 2026 | Orlando, FL</h4>
+      <ul>
+        <li>Led a cross-functional development team to create simulation prototypes for a project under NDA.</li>
+        <li>Coordinated design brainstorms to develop ideas for sports simulation software.</li>
+        <li>Organized and distributed team tasks through Jira.</li>
+      </ul>
+      <div class="tech-stack">Rapid Prototyping, Team Leadership, Jira</div>
 
-      <div class="tech-stack">Firearms, knives, grenades, Hummer vehicle, parachute,...</div>
+      <h2>Projects</h2>
 
-      <h3>Operation Classified - Delta Force</h3>
-      <h4>2015-2017</h4>
+      <h3><a href="https://masterofbanks.itch.io/soccerwordle" target="_blank" rel="noopener noreferrer">Soccer Wordle</a></h3>
+      <h4>May 2025 - August 2025</h4>
+      <ul>
+        <li>Built a full-stack web game where players guess soccer players instead of words.</li>
+        <li>Created a Python web scraper to collect soccer player data from FBref.com.</li>
+        <li>Designed and implemented a PostgreSQL database storing information on 4,000 soccer players.</li>
+        <li>Created a RESTful API using Node.js and Express to deliver player data to the frontend.</li>
+        <li>Designed the frontend in Unity and C# with a responsive player search bar and clear UI.</li>
+      </ul>
+      <div class="tech-stack">Python, PostgreSQL, Node.js, Express, Unity, C#</div>
 
-      <div>It's classified so I can't speak about it.</div>
+      <h3>Drift or Die!</h3>
+      <h4>February 2026 - Present</h4>
+      <ul>
+        <li>Developed a 3D racing game in Unreal Engine 5 where players must drift to prevent their car from exploding.</li>
+        <li>Scripted an intuitive car controller with a custom ray-traced suspension physics system.</li>
+        <li>Used UE5 Blueprints to implement the car controller, environmental bombs, and UI.</li>
+      </ul>
+      <div class="tech-stack">Unreal Engine 5, Blueprints, Vehicle Physics, UI Design</div>
 
-      <div class="tech-stack">Even more Firearms, knives, grenades, Hummer vehicle, parachute,...</div>
+      <h3>Cozy Cat Cafe</h3>
+      <h4>April 2026 - Present</h4>
+      <ul>
+        <li>Solo-developed a 2D restaurant management simulator set in a French cat cafe.</li>
+        <li>Designed and programmed three cooking UI minigames for preparing customer orders.</li>
+        <li>Designed and scripted a finite state machine to control customer ordering, walking, and waiting for food.</li>
+      </ul>
+      <div class="tech-stack">Unity, C#, UI/UX Design, Customer AI</div>
 
-      <h3>Operation Classified - Delta Force</h3>
-      <h4>2012-2015</h4>
-
-      <div>It's classified so I can't speak about it.</div>
-
-      <div class="tech-stack">Firearms, knives, grenades, Hummer vehicle, parachute,...</div>
+      <h3><a href="https://masterofbanks.itch.io/dungeoneer-and-the-3-gifts" target="_blank" rel="noopener noreferrer">Dungeoneer and the 3 Gifts</a></h3>
+      <h4>April 2024 - October 2024</h4>
+      <ul>
+        <li>Created a 2D precision platformer in Unity where players use power-ups to explore a sprawling dungeon.</li>
+        <li>Implemented fluid, snappy movement and a Metroidvania-style power-up progression system.</li>
+        <li>Used C# to program player movement, camera control, and environment control scripts.</li>
+      </ul>
+      <div class="tech-stack">Unity, C#, Gameplay Programming</div>
 
       <h2>Skills</h2>
 
       <div class="skill-set">
-        <h3>Lethal</h3>
-        <SkillRate name="Handguns" :rate="5" />
-        <SkillRate name="Rifles" :rate="5" />
-        <SkillRate name="Shotguns" :rate="5" />
-        <SkillRate name="Machineguns" :rate="5" />
-        <SkillRate name="Missile launchers" :rate="5" />
-        <SkillRate name="Knives" :rate="5" />
-        <SkillRate name="Hand to hand combat" :rate="5" />
+        <h3>Engines and programming</h3>
+        <div>Unity</div>
+        <div>Unreal Engine 5</div>
+        <div>Blueprinting</div>
+        <div>C#</div>
+        <div>C++</div>
+        <div>Python</div>
+        <div>JavaScript</div>
+        <div>SQL</div>
       </div>
 
       <div class="skill-set">
-        <h3>Non-lethal</h3>
-        <SkillRate name="Sneaking" :rate="1" />
-        <SkillRate name="Negotiation" :rate="1" />
-        <SkillRate name="Seduction" :rate="1" />
-        <SkillRate name="Sense of humor" :rate="2" />
+        <h3>Design and production</h3>
+        <div>UI/UX Design</div>
+        <div>Tools Design</div>
+        <div>Rapid Prototype Production</div>
+        <div>Perforce</div>
       </div>
       <div style="clear:both" />
 
       <h2>Education</h2>
 
-      <h3>Kindergarten - 1985</h3>
-      <h4>Kindergarten degree</h4>
-      <div>Specialty in bullying and fighting (58 wins, 58 K-O, 0 losses)</div>
+      <h3>FIEA - University of Central Florida</h3>
+      <h4>August 2025 - Present | Orlando, FL</h4>
+      <div>M.S. in Interactive Entertainment</div>
 
-      <h2>Languages</h2>
-
-      <h3>American</h3>
-      <div>Basic knowledge but I know lots of one-liners</div>
-
-      <h3>That's it</h3>
-      <div>Who needs another language when you speak American?</div>
-
-
-      <h2>Besides...</h2>
-      <div>
-        <h3>I ❤️ Violence</h3>
-        <div>I find it really soothing to just shoot at bad guys</div>
-
-        <h3>I 🧡 Sports</h3>
-        <div>I used to be thin but then I ingested 10 kilos of steroids and proteins a day while doing 1000 push-ups.</div>
-
-        <h3>I 💛 Politics</h3>
-        <div>I hope I can have a career here someday but I might have temper issues.</div>
-
-        <h3>I 💚 Flowers</h3>
-        <div>Especially the big ones, with the trunk and leaves.</div>
-
-      </div>
+      <h3>University of Florida</h3>
+      <h4>August 2021 - May 2025 | Gainesville, FL</h4>
+      <div>B.S. in Physics</div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import SkillRate from "@/components/SkillRate.vue";
 
 export default Vue.extend({
   name: "Resume",
-  components: {
-    SkillRate,
-  },
 });
 </script>
 
@@ -145,12 +138,17 @@ h4 {
   max-width: 700px;
 }
 
+.download-links {
+  margin: 20px 0;
+}
+
 .download-link {
   float:left;
   margin-right: 50px;
 }
 
-.full-content div {
+.full-content div,
+.full-content ul {
   max-width: 800px;
 }
 
@@ -161,6 +159,8 @@ h4 {
 .photo img {
   height: 300px;
   width: 300px;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .tech-stack {
