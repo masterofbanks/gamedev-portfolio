@@ -18,7 +18,7 @@
     </div>
 
     <div class="photo">
-      <img src="img/son.png" alt="Avatar of John" /> 
+      <img src="img/son.png" alt="Photo of Tarik Campbell" />
     </div>
 
     

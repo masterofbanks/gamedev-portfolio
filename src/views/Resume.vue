@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1>Resume</h1>
-    <div style="clear:both"></div>
 
     <div class="full-content">
       <h2>Work experience</h2>
@@ -28,6 +27,33 @@
 
       <h2>Projects</h2>
 
+      <h3>Drift or Die!</h3>
+      <h4>February 2026 - October 2026</h4>
+      <ul>
+        <li>Developed a 3D racing game in Unreal Engine 5 where players must drift to prevent their car from exploding.</li>
+        <li>Scripted an intuitive car controller with a custom ray-traced suspension physics system.</li>
+        <li>Used UE5 Blueprints to implement the car controller, environmental bombs, and UI.</li>
+      </ul>
+      <div class="tech-stack">Unreal Engine 5, Blueprints, Vehicle Physics, UI Design</div>
+
+      <h3>Cozy Cat Cafe</h3>
+      <h4>April 2026 - October 2026</h4>
+      <ul>
+        <li>Solo-developed a 2D restaurant management simulator set in a French cat cafe.</li>
+        <li>Designed and programmed three cooking UI minigames for preparing customer orders.</li>
+        <li>Designed and scripted a finite state machine to control customer ordering, walking, and waiting for food.</li>
+      </ul>
+      <div class="tech-stack">Unity, C#, UI/UX Design, Customer AI</div>
+
+      <h3>Adult Driver</h3>
+      <h4>January 2026 - Present</h4>
+      <ul>
+        <li>Developed a 3D car combat game in Unity where players destroy enemy helicopters to escape a city.</li>
+        <li>Designed and programmed a car controller in C# with player abilities for stealth and combat playstyles.</li>
+        <li>Devised an enemy AI system that tracks the player in packs when alerted to a disturbance.</li>
+      </ul>
+      <div class="tech-stack">Unity, C#, Vehicle Physics, Enemy AI</div>
+
       <h3><a href="https://masterofbanks.itch.io/soccerwordle" target="_blank" rel="noopener noreferrer">Soccer Wordle</a></h3>
       <h4>May 2025 - August 2025</h4>
       <ul>
@@ -38,33 +64,6 @@
         <li>Designed the frontend in Unity and C# with a responsive player search bar and clear UI.</li>
       </ul>
       <div class="tech-stack">Python, PostgreSQL, Node.js, Express, Unity, C#</div>
-
-      <h3>Drift or Die!</h3>
-      <h4>February 2026 - Present</h4>
-      <ul>
-        <li>Developed a 3D racing game in Unreal Engine 5 where players must drift to prevent their car from exploding.</li>
-        <li>Scripted an intuitive car controller with a custom ray-traced suspension physics system.</li>
-        <li>Used UE5 Blueprints to implement the car controller, environmental bombs, and UI.</li>
-      </ul>
-      <div class="tech-stack">Unreal Engine 5, Blueprints, Vehicle Physics, UI Design</div>
-
-      <h3>Cozy Cat Cafe</h3>
-      <h4>April 2026 - Present</h4>
-      <ul>
-        <li>Solo-developed a 2D restaurant management simulator set in a French cat cafe.</li>
-        <li>Designed and programmed three cooking UI minigames for preparing customer orders.</li>
-        <li>Designed and scripted a finite state machine to control customer ordering, walking, and waiting for food.</li>
-      </ul>
-      <div class="tech-stack">Unity, C#, UI/UX Design, Customer AI</div>
-
-      <h3><a href="https://masterofbanks.itch.io/dungeoneer-and-the-3-gifts" target="_blank" rel="noopener noreferrer">Dungeoneer and the 3 Gifts</a></h3>
-      <h4>April 2024 - October 2024</h4>
-      <ul>
-        <li>Created a 2D precision platformer in Unity where players use power-ups to explore a sprawling dungeon.</li>
-        <li>Implemented fluid, snappy movement and a Metroidvania-style power-up progression system.</li>
-        <li>Used C# to program player movement, camera control, and environment control scripts.</li>
-      </ul>
-      <div class="tech-stack">Unity, C#, Gameplay Programming</div>
 
       <h2>Skills</h2>
 
@@ -92,12 +91,14 @@
       <h2>Education</h2>
 
       <h3>FIEA - University of Central Florida</h3>
-      <h4>August 2025 - Present | Orlando, FL</h4>
       <div>M.S. in Interactive Entertainment</div>
 
       <h3>University of Florida</h3>
-      <h4>August 2021 - May 2025 | Gainesville, FL</h4>
       <div>B.S. in Physics</div>
+    </div>
+
+    <div class="download-links">
+      <a :href="resumeUrl" download="T-Alexander-Campbell-Resume.pdf">Download resume (PDF)</a>
     </div>
   </div>
 </template>
@@ -107,10 +108,23 @@ import Vue from "vue";
 
 export default Vue.extend({
   name: "Resume",
+  data() {
+    return {
+      resumeUrl: `${process.env.BASE_URL}d/t-alexander-campbell-resume.pdf`,
+    };
+  },
 });
 </script>
 
 <style scoped>
+h1 {
+  margin-bottom: 30px;
+}
+
+.full-content > h2:first-child {
+  padding-top: 0;
+}
+
 h2 {
   font-weight: 100;
   font-size: 2em;
@@ -139,7 +153,7 @@ h4 {
 }
 
 .download-links {
-  margin: 20px 0;
+  margin-top: 32px;
 }
 
 .download-link {

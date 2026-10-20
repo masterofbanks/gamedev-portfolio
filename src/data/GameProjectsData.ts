@@ -51,7 +51,7 @@ export default [
         
         <figure class="caption-wrapper">
             <img class="pc-screenshot" src="img/projects/condensedMap.png" alt="Heatmap after level adjustments" />
-            <figcaption class="image-caption">Revised Map: Post-t   rimming density map; Level Designers used Heatmap data to remove sections of unexplored desert dunes</figcaption>
+            <figcaption class="image-caption">Revised Map: Post-trimming density map; Level Designers used Heatmap data to remove sections of unexplored desert dunes</figcaption>
         </figure>
     </div>
     </div>
@@ -60,6 +60,61 @@ export default [
   
     
     `, "#23bd69", true),
+    new ProjectData("project-1", "Project Everglades", "img/projects/everent.png", 
+    `
+    <div class="paragraph">
+     <strong>Project Everglades</strong> is a multiplayer co-op exploration game, made in Unreal Engine 5, where you and your friends explore a vast swamp and hunt invasive species. I am the Technical Lead for this project, serving as the foreman for everything network, player controller, and NPC AI-related for a team of 10 people. 
+    </div>
+    
+    
+
+    <div class="paragraph">
+        <strong>Lobby Networking:</strong>
+        <ul>
+        <li>Some of my best work on this project so far is in leveraging Unreal Engine 5’s Networking System to create the necessary components to interact with our game. For instance, I created a lobby system with the Steam Subsystem plugin, where players can host lobbies and invite friends via Steam’s Online Subsystem interface. Other players can also join their friend’s private lobbies by inputting a lobby code, or join public lobbies.
+        </li>
+         <div class="paragraph center">
+        <iframe class="youtube" src="https://www.youtube.com/embed/6b5pPTGfers" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <li> Our team also wanted to create a rich narrative to keep players engaged with our worldbuilding, and we needed a way to get this narrative information to the screen in an unobtrusive and visually pleasing way. To fill this need, I created a dialogue textbox tool with which our narrative team could write dialogue into UE5 data tables and load them into Narrative Points of Interests. Upon interacting with these POIs, the player could read through a series of lines filled with narrative information about the world. Finally, if they wanted to read more about the POI they just found, they could find it under the Narrative tab in the Pause Menu. To create this tab, I had to interface with our save backend to get which of our Narrative POIs the player had interacted with, and display that information to the screen with some text and a picture. 
+        </li>
+        <div class="paragraph center">
+        <iframe src="https://blueprintue.com/render/9d60novd/" style="width: 100%; height: 600px; border: 0;" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="paragraph center">
+        <iframe class="youtube" src="https://www.youtube.com/embed/i43LnVx8yMo" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <li>I also worked closely with our art team to design UI Widgets that integrated well into our art style. One of the game’s mechanics is a boost feature that allows the player to gain massive speed, and we needed a UI component to tell the player how much boost they had at any given time. At first, I went with a large, arrow shaped design that took up a lot of screen space, distracting the player from the beautiful vistas our level designers and environmental artists spent so much time making. After 3 more revisions, I implemented a small, thin segment of a circle that moved with the player.  
+        <div class="paragraph center">
+        <iframe class="youtube" src="https://www.youtube.com/embed/PHviTS-1umo" frameborder="0" allowfullscreen></iframe>
+        </div>
+        </ul>
+    </div>
+
+    <div class="paragraph">
+        <strong>Heatmapping Tooling:</strong>
+        <ul>
+        <li>I also had the opportunity to work with our QA team to make some heatmapping tools for our open world playtests. At first we had a massive open world, with 5-6 POIs dotted around the map and large areas of desert dunes connecting them. To test whether players were finding these POIs naturally, I created a heatmapping system that could track player position during a playtest, and save the heatmap to a png for later analysis. During our next two open world play tests, players complained about boredom in the sections between our large POIs and not being able to find POIs. So our level designers looked at all of our heatmaps, and cut out large sections of desert dunes that players were not exploring. Our world was then more condensed and easily explorable. 
+        </li>
+        </ul>
+
+        <div class="paragraph center">
+        <figure class="caption-wrapper">
+            <img class="pc-screenshot" src="img/projects/rioHeatmap.png" alt="Heatmap before level adjustments" />
+            <figcaption class="image-caption">Initial Heatmap: Player Paths focusing around POIs but not exploring vast desert dune areas</figcaption>
+        </figure>
+        
+        <figure class="caption-wrapper">
+            <img class="pc-screenshot" src="img/projects/condensedMap.png" alt="Heatmap after level adjustments" />
+            <figcaption class="image-caption">Revised Map: Post-t   rimming density map; Level Designers used Heatmap data to remove sections of unexplored desert dunes</figcaption>
+        </figure>
+    </div>
+    </div>
+    
+
+  
+    
+    `, "#2326bd", true),
     new ProjectData("project-2", "Adult Driver", "img/projects/cartoonCar.png", 
     `
     <div class="paragraph">
@@ -150,7 +205,7 @@ export default [
      <div class="paragraph">
         <strong>Cementing Learning:</strong>
         <ul>
-        <li>One of the best ways to truly learn something it to teach it to someone else. So, I created a tutorial series on how to make the exact car controller for this game. After making it, I now have a cemented understanding for how the different physics systems of this car controller work together to create more realisitc game feel for the player.</li>
+        <li>One of the best ways to truly learn something is to teach it to someone else. So, I created a tutorial series on how to make the exact car controller for this game. After making it, I now have a cemented understanding for how the different physics systems of this car controller work together to create more realistic game feel for the player.</li>
         <div class="paragraph center">
         <iframe class="youtube" src="https://www.youtube.com/embed/QRgLKpbCe3k" frameborder="0" allowfullscreen></iframe>
         </div>
@@ -246,5 +301,6 @@ export default [
 
     
     `, "#e80fb7"),
+    
     
 ];
