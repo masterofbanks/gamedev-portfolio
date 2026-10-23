@@ -1,7 +1,7 @@
 import ProjectData from '@/data/ProjectData.ts'
 
 export default [
-    new ProjectData("project-1", "Everent", "img/projects/everent.png", 
+    new ProjectData("project-1", "Everent - Primary Focus: UI/UX", "img/projects/everent.png", 
     `
     <div class="paragraph">
      <strong>Everent</strong> is my graduate school capstone project, and the best game I have worked on (so far). Working with a talented group of 18 developers, we created an open world windboarding game using <strong>Unreal Engine 5</strong>. Players ride, surf, and rail grind through a crumbling city while battling against an evil force known as the Halcyon Heart. I worked as a Technical Designer on this project, involving myself and taking charge in a variety of different sections of development. I primarily used Unreal Engine 5's <strong> Blueprint System</strong> for all  of my work on this project, but also wrote some <strong>C++</strong> code to interface with our custom player controller.
@@ -60,7 +60,7 @@ export default [
   
     
     `, "#23bd69", true),
-    new ProjectData("project-1", "Project Everglades", "img/projects/everent.png", 
+    /*new ProjectData("project-1", "Project Everglades", "img/projects/everent.png", 
     `
     <div class="paragraph">
      <strong>Project Everglades</strong> is a multiplayer co-op exploration game, made in Unreal Engine 5, where you and your friends explore a vast swamp and hunt invasive species. I am the Technical Lead for this project, serving as the foreman for everything network, player controller, and NPC AI-related for a team of 10 people. 
@@ -114,7 +114,7 @@ export default [
 
   
     
-    `, "#2326bd", true),
+    `, "#2326bd", true),*/
     new ProjectData("project-2", "Adult Driver", "img/projects/cartoonCar.png", 
     `
     <div class="paragraph">
@@ -215,7 +215,7 @@ export default [
    
     </div>
     `, "#5a78af"),
-    new ProjectData("project-4", "Cozy Cat Cafe", "img/projects/Cat.png", `
+    new ProjectData("project-4", "Cozy Cat Cafe - Primary Focus: UI/UX", "img/projects/Cat.png", `
     <div class="paragraph">
      <strong>Cozy Cat Cafe</strong> is a coffee shop simulator game where players have to manage a cafe from back to front, including taking customer orders, baking pastries, brewing coffee, and serving customers at their tables. Made using C# and Unity, I used this project to put into practice my learnings in UI/UX Design, software design patterns, and NPC AI System design. 
     </div>
